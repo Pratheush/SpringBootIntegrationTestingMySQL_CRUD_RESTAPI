@@ -1,4 +1,4 @@
-package com.mylearning.springbootintegrationtestingmysql_crud_restapi;
+package com.mylearning.springbootintegrationtestingmysql_crud_restapi.model;
 
 import lombok.*;
 
@@ -8,10 +8,12 @@ import javax.persistence.*;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 @Builder
 @Entity
 @Table(name = "employees")
 public class Employee {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

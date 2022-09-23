@@ -10,7 +10,7 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 
     Optional<Employee> findByEmail(String email);
     
-    Optional<Employee> findByFirstName(String firstName);
+    Optional<Employee> findByFirstName(String firstName).get();
 
     Optional<Employee> findByFirstNameContainingIgnoreCase(String firstName);
 }

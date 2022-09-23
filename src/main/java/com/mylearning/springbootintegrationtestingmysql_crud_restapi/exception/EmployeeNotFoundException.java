@@ -1,4 +1,4 @@
-package com.mylearning.springbootintegrationtestingmysql_crud_restapi;
+package com.mylearning.springbootintegrationtestingmysql_crud_restapi.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

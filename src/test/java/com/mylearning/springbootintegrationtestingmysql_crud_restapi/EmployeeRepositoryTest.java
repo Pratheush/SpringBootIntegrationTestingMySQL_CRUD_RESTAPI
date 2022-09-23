@@ -13,11 +13,12 @@ package com.mylearning.springbootintegrationtestingmysql_crud_restapi;
 // The solution is Testcontainers.
 //  Testcontainers is a Java library that supports JUnit tests, providing lightweight, throwaway instances of common databases, Selenium web browsers, or anything else that can run in a Docker container.
 //  Testcontainer allows us to use Docker containers within our tests. As a result, we can write self-contained integration tests that depend on external resources.
+import com.mylearning.springbootintegrationtestingmysql_crud_restapi.model.Employee;
+import com.mylearning.springbootintegrationtestingmysql_crud_restapi.repository.EmployeeRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 

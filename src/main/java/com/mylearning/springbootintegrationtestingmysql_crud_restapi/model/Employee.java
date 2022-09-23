@@ -15,6 +15,7 @@ import javax.persistence.*;
 @Table(name = "employees")
 public class Employee {
 
+    private static final long SerialVersionUID=10l;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,4 +29,6 @@ public class Employee {
 
     @Column(nullable = false)
     private String email;
+
+    
 }

@@ -4,11 +4,12 @@ import lombok.*;
 
 import javax.persistence.*;
 
-@Setter
-@Getter
-@AllArgsConstructor
-@NoArgsConstructor
+//@Setter
+//@Getter
+//@AllArgsConstructor
+//@NoArgsConstructor
 @ToString
+@Data
 @Builder
 @Entity
 @Table(name = "employees")
